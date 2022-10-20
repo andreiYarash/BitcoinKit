@@ -345,3 +345,9 @@ public extension BitArray {
         return Data(self.asBytesArray())
     }
 }
+
+public extension BitArray {
+    func replaceSubrange<C>(_ subrange: Range<Int>, with newElements: C) where C : Collection, Bool == C.Element {
+        fatalError("Don't use this method!!!")
+    }
+}
